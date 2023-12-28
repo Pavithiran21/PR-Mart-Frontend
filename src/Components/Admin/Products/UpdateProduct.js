@@ -45,16 +45,7 @@ export const UpdateProduct= () => {
         setEdit(response.data.data);
         dispatch(editProduct(response.data.data))
         // setEdit(response.data.data)
-        // dispatch(editProduct(response.data.data));
-        Swal.fire({
-          icon: 'success',
-          title: 'Success!',
-          text: response.data.message,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'OK',
-          
-        });
-
+        // dispatch(editProduct(response.data.data))
       }
       else{
         Swal.fire({

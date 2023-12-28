@@ -35,13 +35,6 @@ export const ViewProduct = () => {
       if(response.data.status){
         setProductData(response.data);
         dispatch(viewProduct(id));
-        Swal.fire({
-          icon: 'success',
-          title: 'Success!',
-          text: response.data.message,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'OK',
-        });
       }
       else{
         Swal.fire({
